@@ -17,3 +17,8 @@ div.css-1ht1j8u e16fv1kl0 {
     padding: 5% 5% 5% 9%;
     border-radius: 5px;   
 }
+
+img {
+  display: block;
+  margin-left: -5em;
+}
