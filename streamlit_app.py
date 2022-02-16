@@ -25,6 +25,8 @@ a3.metric("Humidity", "86%", "4%")
 b1, b2, b3, b4 = st.columns(4)
 with b1:
     st.metric("Temperature", "70 °F", "1.2 °F")
+    st.empty()
+    st.metric("A", "85%", "5%")
 b2.metric("Wind", "9 mph", "-8%")
 b3.metric("Humidity", "86%", "4%")
 b4.metric("Humidity", "86%", "4%")
