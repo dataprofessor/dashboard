@@ -12,7 +12,9 @@ col2.metric("Wind", "9 mph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 
 a1, a2, a3, a4 = st.columns(4)
-a1.metric("Temperature", "70 °F", "1.2 °F")
+with a1:
+    st.metric("Temperature", "70 °F", "1.2 °F")
+    st.metric("Temperature", "70 °F", "1.2 °F")
 a2.metric("Wind", "9 mph", "-8%")
 a3.metric("Humidity", "86%", "4%")
 a4.metric("Humidity", "86%", "4%")
