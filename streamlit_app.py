@@ -10,15 +10,11 @@ with open('style.css') as f:
 hide_menu_style = """
         <style>
         #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
         </style>
         """
-hide_streamlit_style = """
-<style>
-.css-hi6a2p {padding-top: 0rem;}
-</style>
-"""
+
 st.markdown(hide_menu_style, unsafe_allow_html=True)
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     
 a1, a2, a3 = st.columns(3)
 
