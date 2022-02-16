@@ -17,7 +17,7 @@ with a1:
     with st.container():
         st.metric("Temperature", "70 °F", "1.2 °F")
     with st.container():
-        st.metric("Temperature", "70 °F", "1.2 °F")
+        st.bar_chart(np.random.randn(5, 3))
 a2.metric("Wind", "9 mph", "-8%")
 a3.metric("Humidity", "86%", "4%")
 a4.metric("Humidity", "86%", "4%")
