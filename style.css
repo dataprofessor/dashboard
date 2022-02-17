@@ -1,6 +1,8 @@
 /* Move block container higher */
 div.block-container.css-18e3th9.egzxvld2 {
-  margin-top: -5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Row 1 */
