@@ -1,8 +1,10 @@
 /* Move block container higher */
 div.block-container.css-18e3th9.egzxvld2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* Row 1 */
