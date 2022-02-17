@@ -1,1 +1,2 @@
 streamlit==1.5.0
+plost
