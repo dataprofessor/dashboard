@@ -39,7 +39,7 @@ with c1:
     legend=None,
 )
 with c2:
-    st.markdown('### Donut chart')
+    st.markdown('### Bar chart')
     plost.bar_chart(
         data=datasets['stocks'],
         bar='company',
