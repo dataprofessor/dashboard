@@ -44,7 +44,6 @@ with c2:
         data=stocks,
         theta='q2',
         color='company')
-   
     #plost.bar_chart(
     #    data=stocks,
     #    bar='company',
