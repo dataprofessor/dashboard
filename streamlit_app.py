@@ -27,7 +27,7 @@ b4.metric("Humidity", "86%", "4%")
 
 c1, c2 = st.columns(2)
 with c1:
-    st.subheader('Heatmap')
+    st.markdown('### Heatmap')
     plost.time_hist(
     data=seattle_weather,
     date='date',
