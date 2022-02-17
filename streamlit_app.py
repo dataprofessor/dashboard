@@ -26,7 +26,7 @@ b2.metric("Wind", "9 mph", "-8%")
 b3.metric("Humidity", "86%", "4%")
 b4.metric("Humidity", "86%", "4%")
 
-c1, c2 = st.columns((3,1))
+c1, c2 = st.columns((7,3))
 with c1:
     st.markdown('### Heatmap')
     plost.time_hist(
