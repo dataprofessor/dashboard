@@ -40,7 +40,7 @@ with c1:
 )
 with c2:
     st.markdown('### Bar chart')
-        plost.donut_chart(
+    plost.donut_chart(
         data=stocks,
         theta='q2',
         color='company')
