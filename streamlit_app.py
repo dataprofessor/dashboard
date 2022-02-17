@@ -6,6 +6,8 @@ st.set_page_config(layout="wide")
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+seattle_weather=pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
     
 a1, a2, a3 = st.columns(3)
 
@@ -21,5 +23,14 @@ b3.metric("Humidity", "86%", "4%")
 b4.metric("Humidity", "86%", "4%")
 
 c1, c2 = st.columns(2)
-c1.metric("ABC", "95%", "4%")
+with c1:
+    plost.time_hist(
+    data=seattle_weather,
+    date='date',
+    x_unit='week',
+    y_unit='day',
+    color='temp_max',
+    aggregate='median',
+    legend=None,
+)
 c2.metric("XYZ", "75%", "5%")
