@@ -44,8 +44,3 @@ with c2:
         data=stocks,
         theta='q2',
         color='company')
-    #plost.bar_chart(
-    #    data=stocks,
-    #    bar='company',
-    #    value=['q2', 'q3'],
-    #    stack='normalize')
