@@ -10,8 +10,9 @@ st.set_page_config(layout="wide")
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-seattle_weather=pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
-    
+seattle_weather = pd.read_csv('https://raw.githubusercontent.com/tvst/plost/master/data/seattle-weather.csv', parse_dates=['date'])
+stocks = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/stocks_toy.csv')
+
 a1, a2, a3 = st.columns(3)
 
 a1.image(Image.open('streamlit-logo-secondary-colormark-darktext.png'))
@@ -37,4 +38,9 @@ with c1:
     aggregate='median',
     legend=None,
 )
-c2.metric("XYZ", "75%", "5%")
+with c2:
+    st.markdown('### Donut chart')
+    plost.donut_chart(
+    data=stocks,
+    theta='q2',
+    color='company')
