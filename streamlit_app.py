@@ -6,15 +6,6 @@ st.set_page_config(layout="wide")
 
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
-
-hide_menu_style = """
-        <style>
-        #MainMenu {visibility: hidden;}
-        footer {visibility: hidden;}
-        </style>
-        """
-
-#st.markdown(hide_menu_style, unsafe_allow_html=True)
     
 a1, a2, a3 = st.columns(3)
 
