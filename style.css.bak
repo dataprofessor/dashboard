@@ -1,0 +1,37 @@
+/* Move block container higher */
+div.block-container.css-18e3th9.egzxvld2 {
+  margin-top: -5em;
+}
+
+/* Row 1 */
+div.css-1r6slb0.e1tzin5v2 {
+    background-color: #EEEEEE;
+    padding: 3% 3% 3% 12.5%;
+    border-radius: 5px;
+}
+
+/* Row 2 */
+div.css-12w0qpk.e1tzin5v2 {
+    background-color: #DCDCDC;
+    padding: 3% 3% 3% 9.5%;
+    border-radius: 5px;
+}
+
+img {
+  display: block;
+  margin-left: -4em;
+  margin-top: 1em;
+}
+
+/* Hide hamburger menu and footer */
+div.css-r698ls.e8zbici2 {
+  visibility: hidden;
+}
+
+footer.css-ipbk5a.egzxvld4 {
+  visibility: hidden;
+}
+
+div.vg-tooltip-element {
+  visibility: hidden;
+}
